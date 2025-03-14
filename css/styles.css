@@ -1,0 +1,124 @@
+body {
+    background-color: hsl(25, 96%, 69%); /* Définit la couleur de fond */
+    text-align: justify; /* Justifie tout le texte dans le body */
+}
+
+p {
+    font-size: 20px; /* Définit la taille de police des paragraphes */
+    margin-bottom: 1em; /* Ajoute de l'espace entre les paragraphes */
+}
+
+h1 {
+    font-family: Oxanium; /* Définit la police pour les titres h1 */
+}
+
+.bienvenue {
+    color: rgb(250, 115, 16); /* Définit la couleur pour le texte de bienvenue */
+}
+
+.miam-miam {
+    color: rgb(0, 140, 200); /* Définit la couleur pour le texte "Miam-Miam" */
+}
+
+.logo {
+    width: 270px; /* Définit la largeur de l'image du logo */
+    height: 250px; /* Définit la hauteur de l'image du logo */
+    display: flex; /* Utilise le modèle de boîte flex pour centrer l'image */
+    margin: auto; /* Centre l'image horizontalement */
+}
+
+h3 {
+    font-style: italic; /* Met le texte en italique pour les sous-titres */
+    font-size: 20px; /* Définit la taille de police pour les h3 */
+    text-align: center; /* Centre le texte des sous-titres */
+}
+
+.partenaire {
+    color: black; /* Définit la couleur du texte pour le lien partenaire */
+    font-size: 25px; /* Définit la taille de police pour le lien partenaire */
+}
+
+header {
+    display: block; /* Affiche le header comme un bloc */
+    border: 2px solid black; /* Ajoute une bordure noire autour du header */
+    background-color: #cbbab3; /* Définit la couleur de fond du header */
+}
+
+nav {
+    background-color: white; /* Couleur de fond du menu de navigation */
+    padding: 15px; /* Ajoute de l'espace autour du contenu du menu */
+    border-radius: 5px; /* Arrondit les coins du menu de navigation */
+    margin: auto; /* Centre le menu horizontalement */
+    width: fit-content; /* Ajuste la largeur du menu au contenu */
+    text-align: center; /* Centre le texte dans le menu de navigation */
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: blueviolet; /* Définit la couleur des liens */
+    font-family: consolas; /* Définit la police des liens */
+    font-size: 20px; /* Définit la taille de police pour les liens */
+    margin: 0 10px; /* Ajoute de l'espace entre les liens */
+    transition: color 0.3s ease; /* Ajoute une transition pour le changement de couleur */
+}
+
+/* Pseudo-classe pour les liens visités */
+nav a:visited {
+    color: gray; /* Change la couleur pour les liens visités */
+}
+
+nav a:hover {
+    color: black; /* Couleur au survol des liens */
+    font-size: 30px; /* Augmente la taille de police au survol */
+    text-decoration: underline 4px; /* Soulignement au survol */
+}
+
+
+#Les_crepes_a_la_biere{
+    text-decoration: underline;
+}
+
+.parties {
+    color: red; /* Définit la couleur pour le texte des parties */
+    font-size: 30px; /* Définit la taille de police pour les parties */
+    font-family: DynaPuff; /* Définit la police pour les parties */
+}
+
+.question {
+    font-size: 25px; /* Définit la taille de police pour la question */
+    color: purple; /* Définit la couleur pour la question */
+    text-decoration: underline; /* Souligne la question */
+}
+
+footer {
+    display: block; /* Affiche le footer comme un bloc */
+    border: 2px solid black; /* Ajoute une bordure noire autour du footer */
+    background-color: #cbbab3; /* Définit la couleur de fond du footer */
+    text-align: center; /* Centre le texte dans le footer */
+    height: auto; /* Permet au footer de s'adapter au contenu */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+}
+
+/* Style pour le premier ingrédient */
+ul li:first-child {
+    font-weight: bold; /* Met le premier ingrédient en gras */
+    color: blue; /* Définit une couleur spéciale pour le premier élément */
+}
+
+/* Style pour le dernier ingrédient */
+ul li:last-child {
+    font-style: italic; /* Met le dernier ingrédient en italique */
+    color: red; /* Définit une couleur spéciale pour le dernier élément */
+}
+
+/* Style pour la première instruction */
+ol li:first-child {
+    font-weight: bold; /* Met la première instruction en gras */
+    color: green; /* Définit une couleur spéciale pour la première instruction */
+}
+
+/* Style pour la dernière instruction */
+ol li:last-child {
+    font-style: italic; /* Met la dernière instruction en italique */
+    color: brown; /* Définit une couleur spéciale pour la dernière instruction */
+}

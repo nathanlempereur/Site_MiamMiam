@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Métadonnées du document : jeu de caractères UTF-8 et compatibilité avec les appareils mobiles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titre de la page -->
+    <title>Formulaire de contact</title>
+    
+    <!-- Lien vers la feuille de style externe -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Lien pour utiliser les icônes Material Icons dans la page -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Titre de la page de contact avec la classe 'tete' pour le styliser -->
+        <h1 class="tete">Formulaire de contact de Miam-Miam !</h1>
+
+        <!-- Lien pour envoyer un mail à l'adresse fournie avec une icône mail -->
+        <p><i class="material-icons">mail</i>
+           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nathan.lempereur62@gmail.com">Envoyez-moi un mail !</a>
+        </p>
+
+        <!-- Lien pour appeler un numéro de téléphone avec une icône téléphone -->
+        <p><i class="material-icons">phone</i>
+           <a href="tel:+33619529117">Appelez-moi !</a>
+        </p>
+    </header>
+
+    <main>
+        <!-- Formulaire de contact qui envoie les données via la méthode POST à un fichier 'traitement_contact.php' -->
+        <form method="post" action="traitement_contact.php">
+            <fieldset>
+                <!-- Légende du formulaire -->
+                <legend>Contactez-nous</legend>
+
+                <!-- Champ pour entrer le nom de l'utilisateur (champ obligatoire grâce à l'attribut 'required') -->
+                <p>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" required>
+                </p>
+
+                <!-- Champ pour entrer le prénom (champ obligatoire) -->
+                <p>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" required>
+                </p>
+
+                <!-- Champ pour entrer l'adresse email (champ obligatoire avec validation de format email) -->
+                <p>
+                    <label for="email">Adresse mail :</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+
+                <!-- Liste déroulante pour sélectionner l'objet du message (idées recettes, questions, problème de connexion) -->
+                <p>
+                    <label for="objet">Objet :</label>
+                    <select name="objet" id="objet" required>
+                        <option value="idées_recettes">Idées recettes</option>
+                        <option value="questions">Questions</option>
+                        <option value="probleme_connexion">Problème de connexion</option>
+                    </select>
+                </p>
+
+                <!-- Zone de texte multiligne pour écrire le message avec un texte d'exemple par défaut -->
+                <p>
+                    <label for="message">Votre message :</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+                </p>
+
+                <!-- Bouton pour soumettre le formulaire -->
+                <p>
+                    <button type="submit">Envoyer ma demande</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

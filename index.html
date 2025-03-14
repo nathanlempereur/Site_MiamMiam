@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Indique que le document est en français -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Optimise l'affichage sur les appareils mobiles -->
+    <title>Le site de Miam-Miam</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Lien vers le fichier CSS externe pour le style -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Lien vers les icônes Material -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Préconnecte au domaine Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Préconnecte au domaine des polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Oxanium:wght@200..800&display=swap" rel="stylesheet"> <!-- Lien vers les polices personnalisées -->
+</head>
+
+<body>
+    <header>
+        <h1 class="tete"><span class="bienvenue">Bienvenue à tous sur la page</span><span class="miam-miam"> Miam-Miam !</span></h1>
+        <img src="images/caramel.webp" alt="Gif de caramel" class="logo"> <!-- Image de logo avec un texte alternatif -->
+        <h3>Vous cherchez une page de recette ? Alors vous êtes au bon endroit ! :)</h3> <!-- Sous-titre d'introduction -->
+        <br>
+        <a class="partenaire" href="https://www.cuisineaddict.com/acheter-ustensiles-de-cuisine-16.htm" target="_blank" title="Voir notre boutique partenaire !">
+            <i class="material-icons">local_dining</i>Ici, retrouvez notre boutique partenaire pour votre cuisine ! <!-- Lien vers la boutique partenaire avec une icône -->
+        </a>
+        <br><br>
+    </header>
+
+    <br><br>
+
+    <nav>
+        <a class="liens" href="entrees_chouettes.html">Entrées chouettes</a> <!-- Lien vers les entrées -->
+        <a class="liens" href="plats_fabuleux.html">Plats fabuleux</a> <!-- Lien vers les plats -->
+        <a class="liens" href="desserts_incroyables.html">Desserts incroyables</a> <!-- Lien vers les desserts -->
+        <a class="liens" href="contact.html" target="_blank">Contact</a> <!-- Lien vers la page de contact -->
+        <a class="liens" href="inscription.html" target="_blank">Inscription</a> <!-- Lien vers la page d'inscription -->
+    </nav>
+    
+    <main>
+        <h2 id="Les_crepes_a_la_biere">A la une : Les crêpes à la bière !</h2> <!-- Titre principal avec soulignement -->
+        <p><a href="#ingredients" title="Aller à la liste des ingrédients">Retrouvez la liste des ingrédients ici</a></p> <!-- Lien pour accéder à la liste des ingrédients -->
+
+        <picture>
+            <source srcset="images/crepes.jpg" media="(min-width: 800px)"> <!-- Source pour les écrans larges -->
+            <source srcset="images/delicieux-dessert.jpg" media="(min-width: 500px)"> <!-- Source pour les écrans moyens -->
+            <img src="images/sirop.jpg" alt="Image des crêpes à la bière"> <!-- Image par défaut -->
+        </picture>
+
+        <h3>Recette des crêpes à la bière :</h3> <!-- Sous-titre pour la recette -->
+
+        <p class="parties" id="ingredients">Ingrédients :</p> <!-- Section pour les ingrédients -->
+        <ul>
+            <li>250 g de farine</li>
+            <li>3 œufs</li>
+            <li>500 ml de bière blonde</li>
+            <li>50 g de beurre fondu</li>
+            <li>1 pincée de sel</li>
+            <li>1 cuillère à soupe de sucre (optionnel)</li> <!-- Liste des ingrédients -->
+        </ul>
+
+        <p class="parties">Instructions :</p> <!-- Section pour les instructions -->
+        <ol>
+            <li>Dans un grand saladier, mélanger la farine et le sel.</li>
+            <li>Ajouter les œufs un à un en mélangeant bien.</li>
+            <li>Incorporer progressivement la bière pour éviter les grumeaux.</li>
+            <li>Ajouter le beurre fondu et le sucre, puis mélanger jusqu'à obtenir une pâte lisse.</li>
+            <li>Laisser reposer la pâte pendant 30 minutes.</li>
+            <li>Dans une poêle chaude, verser une petite louche de pâte et faire cuire jusqu'à ce que des bulles se forment. Retourner la crêpe et cuire encore 1 à 2 minutes.</li>
+            <li>Répéter jusqu'à épuisement de la pâte.</li> <!-- Liste des étapes de la recette -->
+        </ol>
+
+        <p>Servez chaud avec les garnitures de votre choix : sucre, confiture, chocolat, ou même des ingrédients salés !</p> <!-- Suggestions de présentation -->
+
+        <br><br>
+
+        <p><span class="question">QUESTION :</span> Pensez-vous que la crêpe vient de Bretagne ?</p> <!-- Question posée au lecteur -->
+        <p>Je vous propose de regarder...</p> <!-- Invitation à explorer plus d'informations -->
+
+        <a href="images/breton.jpg" target="_blank" title="Clique pour voir le drapeau !">
+            <img src="images/breton.jpg" alt="Image du drapeau Breton" width="350" height="225"> <!-- Lien vers un article Wikipédia avec une image du drapeau breton -->
+        </a>
+    </main>
+
+    <br>
+
+    <footer>
+        <br>
+        <i class="material-icons">hourglass_top</i>Recette simple et rapide ! | <!-- Icône pour indiquer une recette rapide -->
+        <i class="material-icons">home</i>Recette faite maison ! | <!-- Icône pour indiquer une recette maison -->
+        <i class="material-icons">sentiment_very_satisfied</i>Recette incroyable qui saura vous régaler ! <!-- Icône pour indiquer une recette délicieuse -->
+        <br><br>
+        &copy – lempereur nathan – 2024
+        <br><br>
+    </footer>
+</body>
+</html>

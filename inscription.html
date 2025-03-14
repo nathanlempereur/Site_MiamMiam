@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Déclaration du jeu de caractères et de la compatibilité avec les appareils mobiles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titre de la page -->
+    <title>Formulaire d'inscription</title>
+    
+    <!-- Lien vers la feuille de style externe -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Lien vers les icônes Material Icons pour l'utilisation d'icônes dans le design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Titre principal de la page -->
+        <h1>Bienvenue sur le formulaire d'inscription</h1>
+    </header>
+    
+    <nav>
+        <!-- Espace réservé pour une navigation éventuelle -->
+    </nav>
+    
+    <main>
+        <!-- Formulaire d'inscription principal avec la méthode POST et l'action pointant vers "traitement.php". -->
+        <!-- "enctype" est utilisé pour permettre le téléchargement de fichiers. -->
+        <form method="post" action="traitement.php" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Formulaire d'inscription</legend>
+                <br>
+
+                <!-- SECTION: Informations personnelles -->
+                <fieldset> 
+                    <legend>Informations personnelles :</legend>
+                    
+                    <!-- Champ pour le nom de l'utilisateur -->
+                    <p>
+                        <label for="nom">Indiquez votre Nom :</label>
+                        <input type="text" name="nom" id="nom"/>
+                    </p>
+
+                    <!-- Champ pour le prénom de l'utilisateur -->
+                    <p>
+                        <label for="prenom">Indiquez votre Prénom :</label>
+                        <input type="text" name="prenom" id="prenom"/>
+                    </p>
+
+                    <!-- Champ pour la date de naissance -->
+                    <p>
+                        <label for="date">Indiquez votre Date de naissance :</label>
+                        <input type="date" name="date" id="date"/>
+                    </p>
+
+                    <!-- Champ pour l'adresse postale -->
+                    <p>
+                        <label for="postale">Indiquez votre Adresse postale :</label>
+                        <input type="text" name="adresse" id="postale"/>
+                    </p>
+
+                    <!-- Liste déroulante pour la sélection du pays -->
+                    <p>
+                        <label for="pays">Indiquez votre Pays :</label>
+                        <select name="pays" id="pays">
+                            <!-- Options disponibles pour différents pays dans leur langue respective -->
+                            <option value="France">France</option>
+                            <option value="United_Kingdom">United Kingdom (G.B)</option>
+                            <option value="España">España (Espagne)</option>
+                            <option value="Italia">Italia (Italy)</option>
+                            <option value="United_States">United States (U.S)</option>
+                            <option value="Deutschland">Deutschland (Allemagne)</option>
+                            <option value="日本">日本 (Japon)</option>
+                            <option value="中国">中国 (Chine)</option>
+                            <option value="Brasil">Brasil (Brésil)</option>
+                            <option value="Россия">Россия (Russie)</option>
+                            <option value="भारत">भारत (Inde)</option>
+                            <option value="한국">한국 (Corée du Sud)</option>
+                            <option value="المملكة_العربية_السعودية">المملكة العربية السعودية (Arabie Saoudite)</option>
+                            <option value="México">México (Mexique)</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Sverige">Sverige (Suède)</option>
+                            <option value="Norge">Norge (Norvège)</option>
+                            <option value="Ελλάδα">Ελλάδα (Grèce)</option>
+                            <option value="Türkiye">Türkiye (Turquie)</option>
+                            <option value="Nederland">Nederland (Pays-Bas)</option>
+                        </select>
+                    </p>
+
+                    <!-- Champ pour l'adresse mail -->
+                    <p>
+                        <label for="mail">Indiquez votre Adresse mail :</label>
+                        <input type="email" name="mail" id="mail"/>
+                    </p>
+
+                    <!-- Champ pour le numéro de téléphone -->
+                    <p>
+                        <label for="telephone">Indiquez votre Numéro de téléphone :</label>
+                        <input         type="tel" 
+                        name="telephone" id="telephone" pattern="[0-9]{10}" placeholder="0123456789" required title="Entrez un numéro de téléphone valide à 10 chiffres."/>
+                    </p>
+
+                    <!-- Boutons de sélection pour le sexe (Homme, Femme, Non-Binaire) -->
+                    <p>
+                        <label for="mail">Indiquez votre Sexe :</label>
+                        
+                        <label for="homme">Homme</label>
+                        <input type="radio" name="sexe" id="homme" value="Homme"/>
+
+                        <label for="femme">Femme</label>
+                        <input type="radio" name="sexe" id="femme" value="Femme"/>
+
+                        <label for="non-binaire">Non-Binaire</label>
+                        <input type="radio" name="sexe" id="non-binaire" value="Non-Binaire"/>
+                    </p>
+                </fieldset>
+                <br>
+
+                <!-- SECTION: Informations de connexion -->
+                <fieldset> 
+                    <legend>Informations de connexion :</legend>
+                    
+                    <!-- Champ pour le pseudo avec une longueur de 5 à 10 caractères -->
+                    <p>
+                        <label for="pseudo">Choisir un Pseudo :</label>
+                        <input type="text" name="pseudo" id="pseudo" minlength="5" maxlength="10" required/>
+                    </p>
+
+                    <!-- Champ pour le mot de passe avec un minimum de 8 caractères -->
+                    <p>
+                        <label for="password">Choisir un Mot de passe :</label>
+                        <input type="password" name="password" id="password" minlength="8" required/>
+                    </p>
+
+                    <!-- Champ pour télécharger une photo de profil -->
+                    <p>
+                        <label for="photo">Télécharger une photo de profil :</label>
+                        <input type="file" name="photo" id="photo" accept="image/*"/>
+                    </p>
+                </fieldset>
+                <br>
+
+                <!-- SECTION: Inscription à la newsletter -->
+                <fieldset> 
+                    <legend>Inscription à la newsletter :</legend>
+
+                    <!-- Boutons radio pour choisir de recevoir ou non la newsletter -->
+                    <p>
+                        <label>Recevoir la newsletter ?</label><br>
+                        <input type="radio" name="newsletter" id="oui" value="oui" required>
+                        <label for="oui">Oui</label>
+
+                        <input type="radio" name="newsletter" id="non" value="non">
+                        <label for="non">Non</label>
+                    </p>
+
+                    <!-- Cases à cocher pour choisir les types de newsletters -->
+                    <p>
+                        <label>Quelle(s) newsletter(s) souhaitez-vous recevoir ?</label><br>
+                        <input type="checkbox" name="newsletter_type[]" id="generaliste" value="generaliste">
+                        <label for="generaliste">Newsletter Généraliste</label><br>
+
+                        <input type="checkbox" name="newsletter_type[]" id="desserts" value="desserts">
+                        <label for="desserts">Newsletter Desserts</label><br>
+
+                        <input type="checkbox" name="newsletter_type[]" id="entrees" value="entrees">
+                        <label for="entrees">Newsletter Entrées</label><br>
+
+                        <input type="checkbox" name="newsletter_type[]" id="plats" value="plats">
+                        <label for="plats">Newsletter Plats</label><br>
+
+                        <input type="checkbox" name="newsletter_type[]" id="nouveautes" value="nouveautes">
+                        <label for="nouveautes">Newsletters Nouveautés Culinaires et Ustensiles</label>
+                    </p>
+                </fieldset>
+
+                <!-- Bouton d'envoi pour soumettre le formulaire -->
+                <p>
+                    <button type="submit">Je m'inscris</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Pied de page (non rempli) -->
+    </footer>
+</body>
+</html>
